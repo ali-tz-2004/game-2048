@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Vazir FD, sans-serif;
+  // color: #a9ecff;
+}
+body {
+  background-color: #282c34;
+  color: white;
+  margin: 2rem 5rem;
+}
+
+.App {
+  width: 30rem;
+  margin: auto;
+}
+
+.color-2 {
+  background-color: #86a5ad !important;
+}
+
+.color-4 {
+  background-color: #4491a8 !important;
+}
+
+.color-8 {
+  background-color: #1ba1ca !important;
+}
+
+.color-16 {
+  background-color: #2764c0 !important;
+}
+
+.color-32 {
+  background-color: #3d2fc2 !important;
+}
+
+.color-64 {
+  background-color: #752cc9 !important;
+}
+
+.color-128 {
+  background-color: #a328d3 !important;
+}
+
+.color-256 {
+  background-color: #c225ad !important;
+}
+
+.color-512 {
+  background-color: #c22559 !important;
+}
+
+.color-1024 {
+  background-color: #c22525 !important;
+}
+
+.color-2048 {
+  background-color: #851a1a !important;
+}
+
+.color-4096 {
+  background-color: #551010 !important;
+}
+
+.color-8192 {
+  background-color: #3b0b0b !important;
+}
+
+.color-16384 {
+  background-color: #270707 !important;
+}
+
+.smaller-font {
+  font-size: 0.8rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+  #root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .App {
+    transform: scale(0.75);
+  }
+}
