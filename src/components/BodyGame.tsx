@@ -92,6 +92,15 @@ export const BodyGame = () => {
     if (isSame) return cellTo_Left_Up(array, index - 1, false);
 
     const temp = [...array];
+
+    if (
+      array[index] === array[index - 1] &&
+      array[index] === array[index - 2] &&
+      array[index] !== array[index - 3]
+    ) {
+      index--;
+    }
+
     if (array[index] === array[index - 1]) {
       temp[index - 1] = temp[index] + temp[index - 1];
       temp[index] = 0;
@@ -121,6 +130,14 @@ export const BodyGame = () => {
     if (isSame) return cellTo_Right_Down(array, index + 1, false);
 
     const temp = [...array];
+
+    if (
+      array[index] === array[index + 1] &&
+      array[index] === array[index + 2] &&
+      array[index] !== array[index + 3]
+    ) {
+      index++;
+    }
 
     if (array[index] === array[index + 1]) {
       temp[index + 1] = temp[index] + temp[index + 1];
@@ -276,7 +293,6 @@ export const BodyGame = () => {
       localStorage.removeItem("IsWinGamePopupShow");
     }
     setPopupType(undefined);
-    console.log("no", popupType);
   }
 
   function handleNo() {

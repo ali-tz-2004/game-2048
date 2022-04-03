@@ -79,9 +79,9 @@ export const StyledBodyGame = styled.div`
     place-items: center;
     border-radius: 5px;
     color: ${colors.white};
-    transition: 0.5s;
+    /* transition: 0.5s; */
     &:hover h1 {
-      transform: translateX(5%);
+      /* transform: translateX(5%); */
       /* transform: translateX(50%); */
     }
   }
