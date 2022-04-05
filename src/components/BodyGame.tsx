@@ -353,8 +353,6 @@ export const BodyGame = () => {
     temp.push(element.reduce((a, b) => a + b * j, 0));
     j++;
   }
-  // const filter = cells.filter((x) => x !== 2 && x !== 0);
-  // const score = filter.reduce((a, b) => a + (b / 4) * b, 0);
   const score = temp.reduce((a, b) => a + b, 0);
   return (
     <>

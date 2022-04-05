@@ -79,14 +79,17 @@ export const StyledBodyGame = styled.div`
     place-items: center;
     border-radius: 5px;
     color: ${colors.white};
-    /* transition: 0.5s; */
-    &:hover h1 {
-      /* transform: translateX(5%); */
-      /* transform: translateX(50%); */
-    }
   }
   .cell-full {
     background-color: black;
+    animation: show 100ms ease-in-out;
+    transition: 50ms ease-in-out;
+    @keyframes show {
+      0% {
+        opacity: 0.5;
+        transform: scale(0);
+      }
+    }
   }
   .cell-null {
     background-color: ${colors.primary};
